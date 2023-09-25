@@ -1,1 +1,125 @@
+1)
+q = int (input())
+w = int (input())
+if q > w:
+    print(w)
+else:
+    print(q)
+2)
+q = int (input())
+if q > 0:
+    print(1)
+if q == 0:
+    print(0)
+if q < 0:
+    print(-1)
+3)
+x1 = int(input())  # Номер столбца первой клетки
+y1 = int(input())  # Номер строки первой клетки
+x2 = int(input())  # Номер столбца второй клетки
+y2 = int(input())  # Номер строки второй клетки
 
+# Проверка на одинаковый цвет
+if (x1 + y1) % 2 == (x2 + y2) % 2:
+    print("YES")
+else:
+    print("NO")
+4)
+q = int (input())
+if q % 100 == 0:
+    q=q/100
+if q % 4 == 0:
+    print("YES")
+else: 
+    print("NO")
+5)
+q = int (input())
+w = int (input())
+e = int (input())
+if (q<w and q<e):
+    print(q)
+elif (w<=q and w<=e):
+        print(w)
+elif (e<=w and e<=q):   
+    print(e)
+else :
+    print ('equal')
+6)
+q = int (input())
+w = int (input())
+e = int (input())
+if (q==w and q==e):
+    print(3)
+elif (q==w or q==e or w==e):
+    print(2)
+else:
+    print(0)
+7)
+q = int (input())
+w = int (input())
+e = int (input())
+r = int (input())
+if (q==e or w==r):
+    print("YES")
+else:
+    print("NO")
+8)
+q = int (input())
+w = int (input())
+e = int (input())
+r = int (input())
+if (-1<=e-q<=1 and -1<=r-w<=1):
+    print("YES")
+else:
+    print("NO")
+9)
+q = int (input())
+w = int (input())
+e = int (input())
+r = int (input())
+if (w+q==e+r or w-r==q-e):
+    print("YES")
+else:
+    print("NO")
+10)
+q = int (input())
+w = int (input())
+e = int (input())
+r = int (input())
+if (w+q==e+r or w-r==q-e or q==e or w==r):
+    print("YES")
+else:
+    print("NO")
+11)
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if (abs(x1 - x2) == 1 and abs(y1 - y2) == 2) or (abs(x1 - x2) == 2 and abs(y1 - y2) == 1):
+    print("YES")
+else:
+    print("NO")
+12)
+q = int (input())
+w = int (input())
+e = int (input())
+if(e%q==0 or e%w==0) and (e<=q*w):
+    print("YES")
+else:
+    print("NO")
+13)N=int(input())
+M=int(input())
+x=int(input())
+y=int(input())
+max=N
+min=M
+if(min>max): min=N
+if(min==N): max=M
+
+if(min/2>x): mind1=x
+else: mind1=min-x
+if(max/2>y): mind2=y
+else: mind2=max-y
+
+if(mind1<mind2): print(mind1)
+else: print(mind2)
